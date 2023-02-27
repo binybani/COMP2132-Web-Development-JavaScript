@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  font-size: 12px;
+  color: #333;
+}
+
+a {
+  text-align: center;
+  line-height: 1.75rem;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 5px;
+  border-style: outset;
+  background-color: #4e5283;
+  font-weight: bold;
+  padding: 5px;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+img {
+  width: 20%;
+  vertical-align: top;
+}
+
+img,
+fieldset,
+iframe {
+  border: 0 none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+main {
+  height: 100%;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  padding: 5px;
+  margin: 5px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+p,
+ul,
+ol {
+  line-height: 1.75rem;
+  font-size: 1.05rem;
+  padding: 5px;
+  margin: 5px;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
+li {
+  font-size: 1.05rem;
+  /* padding: 5px; */
+  margin: 5px;
+}
+
+header {
+  background-color: #4e5283;
+  color: #ffffff;
+}
+
+footer {
+  background-color: #4e5283;
+  color: #ffffff;
+  font-size: 1.05rem;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+form {
+  border: 1px solid var(--dark-color);
+  padding: 20px;
+  max-width: 360px;
+  margin-bottom: 30px;
+}
+button {
+  color: white;
+  border-radius: 5px;
+  border-style: outset;
+  background-color: #4e5283;
+  font-weight: bold;
+  padding: 5px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+input {
+  flex: 0 0 60%;
+  padding: 10px;
+  magin-top: 10px;
+  border-radius: 5px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+input[type="submit"] {
+  flex: 0 0 auto;
+  color: white;
+  border-radius: 5px;
+  border-style: outset;
+  background-color: #4e5283;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+input[type="password"] {
+  flex: 0 0 39%;
+}
+
+#password {
+  flex: 0 0 39%;
+}
+
+#togglePassword {
+  flex: 0 0 24%;
+}
+
+.question {
+  font-size: 2em;
+  flex: 0 0 10%;
+}
+#studentId {
+  flex: 0 0 50%;
+}
+
+select {
+  flex: 0 0 63%;
+  margin-bottom: 3px;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+#myform {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--light-color);
+  border-radius: 8px;
+}
+
+label {
+  flex: 0 0 25%;
+  padding: 10px;
+  magin: 10px;
+  font-size: 1.05rem;
+}
+#myform > p,
+#messages {
+  flex: 0 0 100%;
+}
+#messages {
+  border-radius: 20px;
+  border: solid 2px black;
+  padding: 10px;
+  background-color: rgba(240, 116, 116, 0.5);
+  margin: 10px;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff6f6;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px 5px black;
+}
+
+#container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  gap: 15px;
+  margin: 10px;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  border-style: outset;
+  box-shadow: 5px 5px 5px 5px gray;
+  margin-left: 10px;
+  background-color: #e9e7ec;
+}
+
+.assignment {
+  text-align: center;
+  padding: 20px;
+}
+
+#output {
+  margin: 10px;
+  font-size: 1.3em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.tooltip {
+  text-align: center;
+  line-height: 150%;
+  position: relative;
+  display: block;
+  color: white;
+  border-radius: 5px;
+  border-style: outset;
+  background-color: #4e5283;
+  /* font-weight: bold; */
+}
+
+.tooltip .tooltiptext {
+  text-align: left;
+  border: solid 2px yellow;
+  padding-left: 20px;
+  margin-right: 4px;
+  border-radius: 5px;
+  background-color: darkred;
+  box-shadow: 5px 5px 5px 5px gray;
+  color: white;
+  visibility: hidden;
+  width: 200px;
+  font-size: 0.8em;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+}
+
+/* tooltip top */
+
+.tooltip .tooltip-top {
+  width: 200px;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltip-top::after {
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-color: darkred transparent transparent transparent;
+}
+.warning:not(.warning-no-script) {
+  margin-bottom: 1em;
+}
+
+.warning:before {
+  content: "\2755 Warning ";
+  font-weight: bold;
+  border: solid 2px darkred;
+  padding: 5px 2px 2px 2px;
+  margin-right: 4px;
+  border-radius: 5px;
+  background-color: white;
+  color: darkred;
+}
+
+.warning {
+  display: none;
+  padding: 16px;
+  margin: 10px;
+  background-color: #ffcece;
+  border-radius: 9px;
+  border: solid 1px darkred;
+  box-shadow: 0px 0px 0px 4px darkred;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beanie Yubin Kim</title>
+  <link rel="stylesheet" type="text/css" href="./css/style01.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="js/assignment06.js" defer="defer"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1 class="assignment">Assignment06 - Beanie Kim</h1>
+    </header>
+    <main>
+      <section id="container">
+        <p>Please fill out the form. All fields are required.</p>
+        <p>You can hover over the <span class="bold">&#63;</span> in the form below to activate a tool tip, and use the
+          "Show Password/Hide Password"
+          button to toggle between showing or not showing the text in the password field.</p>
+
+        <article>
+          <form id="myform" class="item" action="html/thank-you.html" method="post" id="myform">
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname">
+            <p></p>
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname" name="lastname">
+            <p></p>
+
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId">
+            <div class="question bold tooltip">&#63;
+              <span class="tooltiptext tooltip-top">
+                <span class="bold">&#63; </span>
+                BCIT student IDs must match the pattern: A0nnnnnnn whwere 'n' in any
+                number.
+              </span>
+            </div>
+            <p></p>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <a id="togglePassword">Show Password</a>
+            <p></p>
+
+            <label for="course">Course:</label>
+            <select type="" id="course" name="course">
+              <option value="chooseYourCourse" disabled selected>Choose your course</option>
+              <option value="COMP1850">COMP1850</option>
+              <option value="COMP2132">COMP2132</option>
+              <option value="COMP2913">COMP2913</option>
+              <option value="COMP3012">COMP3012</option>
+              <option value="COMP3015">COMP3015</option>
+            </select>
+            <p></p>
+            <input type="submit" value="Submit" id="submit">
+          </form>
+        </article>
+      </section>
+      <div id="messages" class="warning"></div>
+    </main>
+    <footer>
+      <p>Copyright 2023. Yubin Kim. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
