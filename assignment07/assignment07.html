@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beanie Yubin Kim</title>
+  <link rel="stylesheet" type="text/css" href="./css/style01.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- jQuery Library goes first - before any other scripts that reqire jQuery -->
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js" defer=""></script>
+  <script src="js/assignment07.js" defer="defer"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1 class="assignment">Assignment07 - Beanie Kim</h1>
+    </header>
+    <main>
+      <h2>Product: Cotton T-Shirt</h2>
+      <section id="container">
+        <article class="item">
+          <div class="tab-container">
+            <div class="tab-contents">
+              <div id="tab-01-content" class="tab-content tab-01-content">
+                <div class="gallery">
+                  <div class="main-slide">
+                    <img src="product-images/t-shirt-black-no-model.jpg" alt="t-shirt-black-back" id="slide">
+                  </div>
+                  <div class="thumbs" id="thumbs">
+                    <a href="product-images/t-shirt-black-no-model.jpg">
+                      <img src="product-images/t-shirt-black-no-model.jpg" alt="t-shirt-black-no-model">
+                    </a>
+                    <a href="product-images/t-shirt-black-front.jpg">
+                      <img src="product-images/t-shirt-black-front.jpg" alt="t-shirt-black-front">
+                    </a>
+                    <a href="product-images/t-shirt-black-back.jpg">
+                      <img src="product-images/t-shirt-black-back.jpg" alt="t-shirt-black-back">
+                    </a>
+                  </div>
+                </div>
+              </div><!-- end tab-01-content -->
+              <div id="tab-02-content" class="tab-content tab-02-content">
+                <div class="gallery">
+                  <div class="main-slide">
+                    <img src="product-images/t-shirt-red-no-model.jpg" alt="t-shirt-black-no-model">
+                  </div>
+                  <div class="thumbs" id="thumbs">
+                    <a href="product-images/t-shirt-red-no-model.jpg">
+                      <img src="product-images/t-shirt-red-no-model.jpg" alt="t-shirt-black-no-model">
+                    </a>
+                    <a href="product-images/t-shirt-red-front.jpg">
+                      <img src="product-images/t-shirt-red-front.jpg" alt="t-shirt-black-front">
+                    </a>
+                    <a href="product-images/t-shirt-red-back.jpg">
+                      <img src="product-images/t-shirt-red-back.jpg" alt="t-shirt-black-back">
+                    </a>
+                  </div>
+                </div>
+              </div><!-- end tab-02-content -->
+              <div id="tab-03-content" class="tab-content tab-03-content">
+                <div class="gallery">
+                  <div class="main-slide">
+                    <img src="product-images/t-shirt-grey-no-model.jpg" alt="t-shirt-black-back" id="slide">
+                  </div>
+                  <div class="thumbs" id="thumbs">
+                    <a href="product-images/t-shirt-grey-no-model.jpg">
+                      <img src="product-images/t-shirt-grey-no-model.jpg" alt="t-shirt-black-no-model">
+                    </a>
+                    <a href="product-images/t-shirt-grey-front.jpg">
+                      <img src="product-images/t-shirt-grey-front.jpg" alt="t-shirt-black-front">
+                    </a>
+                    <a href="product-images/t-shirt-grey-back.jpg">
+                      <img src="product-images/t-shirt-grey-back.jpg" alt="t-shirt-black-back">
+                    </a>
+                  </div>
+                </div><!-- end tab-03-content -->
+              </div><!-- end tab-contents -->
+            </div><!-- end tab-container -->
+        </article>
+
+        <form class="item" action="thank-you.html" method="post">
+          <div class="detail">
+            <h4>Price: <span id="price"></span></h4>
+            <label for="price">Quantity: </label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+            <p>Total: <span id="totalCost"></span></p>
+          </div>
+
+          <div class="detail tab-nav">
+            <h4>Color: <span id="tColor"></span></h4>
+            <p><label for="black"><input id="black" type="radio" name="color" value="Black" checked><a
+                  href="#tab-01-content" class="active">Black</a></label></p>
+            <p><label for="red"><input id="red" type="radio" name="color" value="Red"><a
+                  href="#tab-02-content">Red</a></label>
+            </p>
+            <p><label for="grey"><input id="grey " type="radio" name="color" value="Grey"><a
+                  href="#tab-03-content">Grey</a></label></p>
+          </div>
+
+          <div class="detail size">
+            <h4>Size: <span id="tSize"></span></h4>
+            <p><label><input type="radio" name="size" value="small">Small S</S></label></p>
+            <p><label><input type="radio" name="size" value="medium">Medium M</label></p>
+            <p><label><input type="radio" name="size" value="large">Large L</label></p>
+          </div>
+
+          <div class="detail">
+            <input type="submit" name="submit" value="" id="submit">
+          </div>
+
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2023. Yubin Kim. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
