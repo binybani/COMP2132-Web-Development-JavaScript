@@ -1,0 +1,117 @@
+/*
+-------------------------------------------------- 
+Tab Navigation Styles 
+--------------------------------------------------
+*/
+.tab-container {
+    margin-top: 30px;
+    margin-bottom: 30px;	
+}
+
+.tab-nav {
+    height: 40px;	
+}
+
+.tab-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* show a tab with rounded top corners */
+.tab-nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 82px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+
+    border-top: 1px solid var(--dark-color);
+    font-weight: bold;
+    color: var(--dark-color);
+    font-size: 1em;
+    position: relative;
+    z-index: 999;    
+    left: 0;
+    top:4px;    
+
+    background-color: var(--main-color-transparent);
+    border-radius: 10px 10px 0px 0px;
+    border-width:0px;
+    margin-right:1px;
+    
+    transition:top .1s linear;
+}
+/* raise the tab when user iteracts */
+.tab-nav a:focus:not(.active),
+.tab-nav a:hover:not(.active),
+.tab-nav a:active:not(.active) {
+    border-right: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
+    border-top: 2px solid var(--dark-color);    
+    top:0px;
+    color:var(--dark-color);
+}
+/* highlight tab when user clicks/taps */
+.tab-nav .active {    
+    color: var(--light-color);
+    background-color: var(--main-color);	
+    top:0px;    
+}
+/*
+Tab contents styles
+*/
+
+.tab-contents {
+    padding: 20px;
+    border: 1px solid #000000;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-width: 0px;;
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
+
+.tab-content {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;	
+}
+
+.tab-content h2 {
+    border-bottom: 2px dotted #7AB2EC;
+    margin-bottom: 20px;    
+}
+
+.tab-content img {
+    width: 250px;
+    display: block;
+    margin: 0 auto 16px;
+    border-radius: 5px;;
+    border:solid 2px var(--dark-color);
+    box-shadow: 0px 0px 0px 1px var(--light-color);
+}
+
+@media (min-width: 720px){
+    .tab-content {
+        grid-template-columns: 250px 1fr;	
+    }
+    .tab-content h2 {
+        grid-column: span 2;   
+    }
+}
+
+@media (min-width: 460px) {
+    .tab-nav a {
+        width: 120px;
+        font-size: 1.1em;
+    }
+}
+/* 
+--------------------------------------------------
+End jQuery Tabs Styles 
+--------------------------------------------------
+*/
