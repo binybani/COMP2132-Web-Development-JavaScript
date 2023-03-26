@@ -102,12 +102,10 @@ function changeLoserImg(compScore, userScore) {
       catsEyes.src = `img/eye-close.png`;
       catsEyes.className = `blink`;
     }, delayOneSecond);
-    catsPaw.src = ``;
     catsPaw.classList.remove(`blink`);
     catsPaw.style.display = "none";
   } else if (compScore < userScore) {
     setTimeout(function () {
-      catsPaw.src = `img/paw.png`;
       catsPaw.className = `blink`;
       catsPaw.style.display = "block";
     }, delayOneSecond);
@@ -192,7 +190,7 @@ btnRollDice.addEventListener("click", function () {
     }
   }
 
-  // change image with dice point
+  // change dice image with dice point
   setTimeout(function () {
     clearTimeout(timeoutHandler);
     cancelAnimationFrame(diceAnimationHandler);
