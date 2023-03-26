@@ -4,7 +4,6 @@ const delayTwoSecond = 2000;
 
 //get page elements
 const popup = document.getElementById("game-over");
-const closePopup = document.getElementById("close-pop-up");
 const closePopupWithOkBtn = document.getElementById("btn-close-pop-up");
 const finalResultMessege = document.getElementById("final-result");
 
@@ -24,9 +23,6 @@ function makeClosePopup() {
   }, delayOneSecond);
   refreshPage();
 }
-
-//x button is clicked
-closePopup.addEventListener("click", makeClosePopup);
 
 //ok button is clicked
 closePopupWithOkBtn.addEventListener("click", makeClosePopup);

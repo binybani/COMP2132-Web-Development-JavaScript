@@ -65,18 +65,24 @@ function finalResult(compTotalScore, userTotalScore) {
     isWin = 0;
     catsEyes.src = `img/eye-close.png`;
     catsEyes.className = `blink`;
-    catsPaw.classList.remove(`blink`);
-    catsPaw.src = ``;
+    setTimeout(function () {
+      catsPaw.classList.remove(`blink`);
+      catsPaw.src = ``;
+    }, delayOneSecond);
   } else if (compTotalScore < userTotalScore) {
     isWin = 1;
     catsPaw.src = `img/paw.png`;
     catsPaw.className = `blink`;
-    catsEyes.classList.remove(`blink`);
-    catsEyes.src = `img/eye-open.png`;
+    catsPaw.style.display = "block";
+    setTimeout(function () {
+      catsEyes.classList.remove(`blink`);
+      catsEyes.src = `img/eye-open.png`;
+    }, delayOneSecond);
   } else {
     isWin = 2;
     catsPaw.src = `img/paw.png`;
     catsPaw.className = `blink`;
+    catsPaw.style.display = "block";
     catsEyes.src = `img/eye-close.png`;
     catsEyes.className = `blink`;
   }
@@ -98,10 +104,12 @@ function changeLoserImg(compScore, userScore) {
     }, delayOneSecond);
     catsPaw.src = ``;
     catsPaw.classList.remove(`blink`);
+    catsPaw.style.display = "none";
   } else if (compScore < userScore) {
     setTimeout(function () {
       catsPaw.src = `img/paw.png`;
       catsPaw.className = `blink`;
+      catsPaw.style.display = "block";
     }, delayOneSecond);
     catsEyes.src = `img/eye-open.png`;
     catsEyes.classList.remove(`blink`);
