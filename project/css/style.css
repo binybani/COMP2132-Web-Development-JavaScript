@@ -395,15 +395,7 @@ button:hover {
   animation: blink-effect 1s step-end infinite;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #game-over {
-    width: 40%;
-    left: 220px;
-    top: 210px;
-  }
-}
-/* Large devices (laptops/desktops, 1024px and down) */
+/* Large devices (1024px and down) */
 @media only screen and (max-width: 1024px) {
   .player #cats-paw {
     margin-top: 25%;
@@ -414,8 +406,11 @@ button:hover {
     margin-top: 65%;
     margin-left: 5%;
   }
+  #game-over {
+    width: 25%;
+  }
 }
-/* Medium devices (landscape tablets, 768px and down) */
+/* Medium devices (768px and down) */
 @media only screen and (max-width: 768px) {
   .player-section:nth-child(1) .player {
     min-height: 150px;
@@ -433,8 +428,12 @@ button:hover {
     margin-top: 55%;
     margin-left: 2%;
   }
+  #game-over {
+    width: 31%;
+    left: 31.5%;
+  }
 }
-/* Small devices (portrait tablets and large phones, 600px and down) */
+/* Small devices (600px and down) */
 @media only screen and (max-width: 600px) {
   .player-section:nth-child(1) .player {
     min-height: 120px;
@@ -445,8 +444,8 @@ button:hover {
   .player #cats-paw {
     margin-top: 10%;
   }
+  #game-over {
+    width: 40%;
+    left: 24.5%;
+  }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* Extra large devices (large laptops and desktops, 1440px and up) */
-/* Extra large devices (large laptops and desktops, 1800px and up) */
-/* Extra large devices (large laptops and desktops, 2560px and up) */
