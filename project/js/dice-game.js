@@ -67,7 +67,7 @@ function finalResult(compTotalScore, userTotalScore) {
     catsEyes.className = `blink`;
     setTimeout(function () {
       catsPaw.classList.remove(`blink`);
-      catsPaw.src = ``;
+      catsPaw.style.display = "none";
     }, delayOneSecond);
   } else if (compTotalScore < userTotalScore) {
     isWin = 1;
